@@ -10,7 +10,7 @@ This project allows you to pick your birthday out of two selects and upon clicki
 
 **Tech used:** HTML, CSS, JavaScript
 
-First I added a form in the html with two selectsto choose both day and month and a button to submit the form. I then went onto the javascript and added an event handler for the button that would invoke the single funtion used in this page to determine what astrological sign match's the input birthday.
+First I added a form in the html with two selects to choose both day and month and a button to submit the form. I then went onto the javascript and added an event handler for the button that would invoke the single funtion used in this page to determine what astrological sign match's the input birthday.
 
 ## Optimizations
 
