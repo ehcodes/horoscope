@@ -1,77 +1,57 @@
-body {
-  font-family: monospace;
-  font-size: 15px;
-  text-align: center;
-  background: skyblue;
-  color: purple;
-  text-shadow: 1px 1px 2px pink;
-  height:800px;
-  margin: auto;
-  background-image: url('../images/background.jpg');
-  background-size: 100% 800px;
-  background-repeat: no-repeat;
+.horoscopeForm{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color:#fff;
+  position: absolute;
+  top:30%;
+  left:40%;
+  right:40%;
+  transform:-50%;
+  z-index:55;
+  border-radius:25px;
+  padding:1rem 2rem;
+  background:rgba(0,0,0,.5);
+  text-align:center;
 }
-button {
-  background: purple;
-  color: skyblue;
-  border: none;
-  padding: .8% 1%;
-  font-size: 1.1em;
-  font-family: sans-serif;
-  font-weight: bold;
+#selectSign,
+.goBack,
+.submitButton{
+  border-radius:10px;
+  border:0px;
+  padding:.4rem 1rem;
+  background:rgba(255,255,255,.2);
+  color:#fff;
 }
-button:hover {
-  background: blue;
+#selectSign{
+  margin-top:1rem;
 }
-select{
-  background: lime;
-  padding:.8%;
-  font-weight: bold;
+.selectSign{
+  color:#000;
 }
-option{
-  background: green;
-  font-weight: bold;
+.horoscopeDisplay{
+  line-height: 2;
+  color:#fff;
+  position: absolute;
+  top:22%;
+  left:10%;
+  right:10%;
+  z-index:55;
+  border-radius:25px;
+  padding:2rem;
+  background:rgba(0,0,0,.5);
 }
-#container{
-  width:100%;
-  height:800px;
+.horoscopeContent{
+  padding:2rem;
 }
-section{
-  padding-top: 20%;
+.horoscopeForm p{
+  font-size:.52rem;
+  margin:.5rem;
 }
-section > h1{
-  font-size: 2em;
-}
-h2 > h2{
-  color: blue;
-}
-.textContainer{
-  width: 50%;
-  margin: auto;
-}
-.hidden{
-  display: none;
-}
-/* ---------------------------------
-Responsive Responsive Responsive
---------------------------------- */
-@media only screen and (max-width:768px) {
-  #container{
-    width:100%;
-    margin: auto;
-  }
-  .textContainer{
-    width: 100%;
-    margin: auto;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024){
-  #container{
-    width:80%;
-    margin: auto;
-  }
-  .textContainer{
-    width: 100%;
-    margin: auto;
-  }
+.submitButton{
+  font-weight:bold;
+  font-size:16px;
+  background:rgba(0,0,0,1);
+  padding:1rem;
+  color:rgba(255,255,255,.9);
 }
